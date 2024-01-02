@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(56, 46, 46);
+}
+.sun-orbit{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 200px auto;
+    
+}
+
+.sun{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: yellow;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.earth{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    animation: rotate 10s linear infinite;
+}
+.moon{
+    position: absolute;
+    width: 20px;
+    height: 20px; 
+    background-color: rgb(221, 197, 166);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    animation: rotate-moon 30s linear infinite;
+}
+
+.mars{
+    position: absolute;
+    width: 30px;
+    height: 30px; 
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(167, 116, 49); 
+    transform-origin: top left;
+    animation: rotate-mars 5s linear infinite;
+}
+.mars-moon{
+    position: absolute;
+    width: 10px;
+    height: 10px; 
+    background-color: rgb(192, 163, 125);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    animation: rotate-moon 30s linear infinite;
+}
+.saturn{
+    position: absolute;
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(28, 223, 213); 
+    transform-origin: top left;
+    animation: rotate-saturn 15s linear infinite;
+}
+.pluto{
+    position: absolute;
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(214, 146, 188); 
+    transform-origin: top left;
+    animation: rotate-pluto 20s linear infinite;
+}
+@keyframes rotate {
+    from{
+       transform: rotate(0)
+       translateX(100px);
+    }
+    to{
+        transform: rotate(360deg)
+        translateX(100px);
+    }
+}
+@keyframes rotate-mars {
+    from{
+       transform: rotate(0)
+       translateX(50px);
+    }
+    to{
+        transform: rotate(360deg)
+        translateX(50px);
+    }
+}
+@keyframes rotate-moon {
+    from{
+       transform: rotate(0)
+       translateX(20px);
+    }
+    to{
+        transform: rotate(360deg)
+        translateX(20px);
+    }
+}
+@keyframes rotate-saturn {
+    from{
+       transform: rotate(0)
+       translateX(180px);
+    }
+    to{
+        transform: rotate(360deg)
+        translateX(180px);
+    }
+}
+@keyframes rotate-pluto {
+    from{
+       transform: rotate(0)
+       translateX(230px);
+    }
+    to{
+        transform: rotate(360deg)
+        translateX(230px);
+    }
+}
